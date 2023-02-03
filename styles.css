@@ -1,11 +1,50 @@
-body {background-image: url(epic_1b_20190530011359.png); background-size:cover; background-repeat: no-repeat; width: 600px;
+body {
+    background-image: url(2022-astronomy-photographer-of-the-year-milky-way.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
 }
 
-button {background-color: lightskyblue; border-radius: 30%; width: 100px; height: 40px; color: brown; font-size: x-large; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif; border-color: honeydew; margin-left: 300px; font-style: italic;}
+button {
+    background-color: lightskyblue;
+    border-radius: 30%;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    border-color: honeydew;
+    margin-left: 300px;
+    font-style: italic;
+}
 
-#search { background-color: lightskyblue; border-radius: 30%; height: 40px; width: 200px; border-color: rgb(148, 176, 107); font-size: x-large; color: orangered;
-           margin-left: 250px;}
+#search {
+    background-color: lightskyblue;
+    border-radius: 10%;
+    height: 50px;
+    width: 400px;
+    border-color: white;
+    font-size: x-large;
+    color: orangered;
+    margin-left: 150px;
+}
 
-h1 {color: brown; margin-left: 230px; margin-top: 110px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic; font-size: 35px;}
+h1 {
+    color: white;
+    margin-left: 230px;
+    margin-top: 110px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+}
 
-body
+h2 {
+    color: white;
+    margin-left: 220px;
+    font-size: xx-large;
+}
+
+div {
+    background-color: lightskyblue;
+    font-size: x-large;
+}
