@@ -31,20 +31,24 @@ button {
 
 h1 {
     color: white;
-    margin-left: 230px;
+    margin-left: 150px;
     margin-top: 110px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 h2 {
     color: white;
-    margin-left: 220px;
+    margin-left: 100px;
     font-size: xx-large;
 }
 
 div {
-    background-color: lightskyblue;
     font-size: x-large;
+    margin-left: 30px;
+    margin-top: 60px;
+    color: azure;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
