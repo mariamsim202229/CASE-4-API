@@ -4,8 +4,8 @@ const urlNasa = "https://images-api.nasa.gov/search?q=";
 const retrieve = document.querySelector("#retrieve");
 const button = document.querySelector("button");
 const container = document.querySelector("#container")
-const year_start = document.querySelector("#year_start")
-const year_end = document.querySelector("#year_end")
+const yearStart = document.querySelector("#yearStart")
+const yearEnd = document.querySelector("#yearEnd")
 
 // Each time the button is clicked by the user
 // the word typed in the search input box becomes the value of the searching.
@@ -22,12 +22,12 @@ button.addEventListener("click", function () {
     // the year values, the the word types by the user are added to the original nasa URL in order to get specific requested data.
     // Information is being transerfered in json format.
 
-    fetch(urlNasa + word + "&year_start=" + year_start.value + "&year_end=" + year_end.value)
+    fetch(urlNasa + word + "&year_start=" + yearStart.value + "&year_end=" + yearEnd.value)
         .then((response) => response.json())
         .then((data) => {
 
-            console.log(urlNasa + word + "&year_start=", "&year_end=" + year_start.value + year_end.value);
-            console.log("data", data.collection.items);
+            // console.log(urlNasa + word + "&year_start=", "&year_end=" + year_start.value + year_end.value);
+            // console.log("data", data.collection.items);
 
             // Every time the user needs to search with a new word, the old data is being emptied from the webpage.
 
@@ -43,11 +43,12 @@ button.addEventListener("click", function () {
                     let title = item.data[0].title;
                     let keywords = item.data[0].keywords;
                     document.getElementById("container").innerHTML += title, keywords;
-                    console.log(title, keywords);
+                    // console.log(title, keywords);
                 }
-
             });
-
         });
-
 });
+
+let url
+// url= "https://images-api.nasa.gov/search?q=apollo&year_start= &year_end=19702023"
+url= "data.json";

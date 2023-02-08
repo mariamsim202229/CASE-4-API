@@ -55,10 +55,18 @@ div {
 }
 
 
-#year_start,
-#year_end {
+#yearStart,
+#yearEnd {
     font-size: x-large;
     margin-left: 300px;
     background-color: darksalmon;
     color: brown;
+}
+
+a {
+    color: white;
+}
+
+footer {
+    color: white;
 }
