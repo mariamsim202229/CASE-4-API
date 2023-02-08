@@ -1,29 +1,53 @@
-const search = document.querySelector("#search");
+
+// Connecting HTML elements to Javascript
+const urlNasa = "https://images-api.nasa.gov/search?q=";
+const retrieve = document.querySelector("#retrieve");
 const button = document.querySelector("button");
+const container = document.querySelector("#container")
+const year_start = document.querySelector("#year_start")
+const year_end = document.querySelector("#year_end")
 
-button.addEventListener("search", function () {
-    console.log("klickade")
-})
-function getPictureOfTheDay() {return ''}
+// Each time the button is clicked by the user
+// the word typed in the search input box becomes the value of the searching.
+// If the word is shorter than 2 letters, the functions returns. 
+button.addEventListener("click", function () {
 
-    fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+    let word = retrieve.value;
+    if (word.length < 2) {
+        return;
+    }
+    // console.log("year_start" + "year_end"+ year_start.value + year_end.value);
+
+    // The method fetch is applied for retrieving data from the API (Nasa image and video library).
+    // the year values, the the word types by the user are added to the original nasa URL in order to get specific requested data.
+    // Information is being transerfered in json format.
+
+    fetch(urlNasa + word + "&year_start=" + year_start.value + "&year_end=" + year_end.value)
         .then((response) => response.json())
-        .then((pictureData) => {
-            const copyright = pictureData.copyright;
-            const date = pictureData.date;
-            const explanation = pictureData.explanation;
-            const infoElement = document.createElement("div");
-            infoElement.textContent = `The date of picture is ${date}. Explanation: ${explanation}.`;
-            document.querySelector("h2").textContent += `${copyright}`;
+        .then((data) => {
 
-            const pictureElement = document.getElementById("picture");
-            pictureElement.appendChild(infoElement);
-        })
+            console.log(urlNasa + word + "&year_start=", "&year_end=" + year_start.value + year_end.value);
+            console.log("data", data.collection.items);
 
-        // .catch((err) => {
-        //     console.error(err.message);
-        // });
+            // Every time the user needs to search with a new word, the old data is being emptied from the webpage.
 
-// }
+            document.getElementById("container").innerHTML = "";
 
+            //  In case it is an array, for loop is created for each item in the database. 
+            // Only few properties are chosen for each item data to be posted on the webpage. 
+            // The final javascript data is being sent to html document. 
+            let items = data.collection.items;
 
+            items.forEach(item => {
+                if (Array.isArray(item.data)) {
+                    let title = item.data[0].title;
+                    let keywords = item.data[0].keywords;
+                    document.getElementById("container").innerHTML += title, keywords;
+                    console.log(title, keywords);
+                }
+
+            });
+
+        });
+
+});

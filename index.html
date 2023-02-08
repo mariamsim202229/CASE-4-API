@@ -11,20 +11,27 @@
 
 <body>
 
-    <h1>API Visualisering <hr> "Astronomy Picture of the Day"</h1>
+    <h1>API Visualisering</h1>
+    <hr>
 
-    <input id="search" type="text">
+    <h2> Nasa image and Video Library </h2>
+
+    <input id="retrieve" type="text">
+    <input type="number" name="year_start" id="year_start" min="1970" max="2023" step="1" value="1970">
+    <input type="number" name="year_end" id="year_end" min="1970" max="2023" step="1" value="2023">
     <br>
-    <button> Sök </button>
+    <button> Hämta data </button>
 
-    <div id="pictureOfTheDay"></div>
-    <h2></h2>
-    <div id="picture">
+    <div id="container">
+        <h3></h3>
+        <div></div>
 
-       
     </div>
-
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+<!-- mobile view -->
+<!--  -->
