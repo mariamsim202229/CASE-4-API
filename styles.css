@@ -1,21 +1,23 @@
+@media (max-width: 600px){
 body {
+
     background-image: url(shutterstock_311871896.webp);
-    max-width: ;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 600px;
+    /* max-width: 600px; */
+}
 }
 
 button {
     background-color: darksalmon;
-    border-radius: 30%;
-    width: 200px;
+    border-radius: 10%;
+    width: 150px;
     height: 40px;
     color: brown;
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
     border-color: honeydew;
-    margin-left: 250px;
+    margin-left: 200px;
     font-style: italic;
 }
 
@@ -27,21 +29,21 @@ button {
     border-color: white;
     font-size: x-large;
     color: brown;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 h1 {
     color: white;
-    margin-left: 100px;
-    margin-top: 80px;
+    margin-left: 80px;
+    margin-top: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     font-size: 30px;
 }
 
 h2 {
-    color: darkviolet;
-    margin-left: 150px;
+    color: white;
+    margin-left: 100px;
     font-size: xx-large;
 }
 
@@ -58,7 +60,7 @@ div {
 #yearStart,
 #yearEnd {
     font-size: x-large;
-    margin-left: 300px;
+    margin-left: 100px;
     background-color: darksalmon;
     color: brown;
 }
