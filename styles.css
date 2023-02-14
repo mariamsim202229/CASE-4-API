@@ -1,7 +1,6 @@
-
-    body {
-max-width: 414px;
-max-height: 896px;
+body {
+    max-width: 414px;
+    max-height: 896px;
     background-image: url(scaletowidth.jpeg);
     background-size: cover;
     /* background-repeat: no-repeat; */
@@ -22,9 +21,9 @@ button {
     background-color: violet;
     height: 35px;
     width: 300px;
-    border-color: brown; 
-    border: solid 10px; 
-    border-color:  rgb(68, 38, 90);
+    border-color: brown;
+    border: solid 10px;
+    border-color: rgb(68, 38, 90);
     font-size: x-large;
     color: white;
     margin-left: 8px;
@@ -50,7 +49,7 @@ div {
     font-size: x-large;
     margin-left: 30px;
     margin-top: 70px;
-    color: azure;
+    color: white;
     position: relative;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -62,17 +61,18 @@ div {
     background-color: violet;
     color: rgb(68, 38, 90);
     height: 35px;
-    border: solid 10px; 
-    border-color:  rgb(68, 38, 90);
+    border: solid 10px;
+    border-color: rgb(68, 38, 90);
 }
+
 #yearEnd {
     font-size: x-large;
     margin-left: 1px;
     background-color: violet;
-    color:  rgb(68, 38, 90);
+    color: rgb(68, 38, 90);
     height: 35px;
-    border: solid 10px; 
-    border-color:  rgb(68, 38, 90);
+    border: solid 10px;
+    border-color: rgb(68, 38, 90);
 }
 
 a {
@@ -82,4 +82,15 @@ a {
 footer {
     color: white;
     margin-top: 180px;
+}
+
+.imageClass {
+    height: 300px;
+    width: 414px;
+}
+
+p {
+    width: 414px;
+    border: solid 3px;
+    padding: 5px;
 }
