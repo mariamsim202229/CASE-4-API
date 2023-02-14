@@ -11,7 +11,8 @@ button {
     color: rgb(68, 38, 90);
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    border: solid 10px;
+    /* border: solid 10px; */
+    border-style: hidden;
     margin-top: 10px;
     font-style: italic;
     margin-left: 165px;
@@ -20,10 +21,10 @@ button {
 #retrieve {
     background-color: violet;
     height: 35px;
-    width: 414px;
-    border-color: brown;
-    border: solid 10px;
-    border-color: rgb(68, 38, 90);
+    width: 435px;
+    /* border: solid 10px;
+    border-color: rgb(68, 38, 90); */
+    border-style: hidden;
     font-size: x-large;
     color: white;
     margin-left: 25px;
@@ -56,22 +57,24 @@ div {
 
 #yearStart {
     font-size: x-large;
-    margin-left: 150px;
+    margin-left: 155px;
     background-color: violet;
     color: rgb(68, 38, 90);
     height: 35px;
-    border: solid 10px;
-    border-color: rgb(68, 38, 90);
+    border-style: hidden;
+    /* border: solid 10px;
+    border-color: rgb(68, 38, 90); */
 }
 
 #yearEnd {
     font-size: x-large;
-    margin-left: 1px;
+    margin-left: 5px;
     background-color: violet;
     color: rgb(68, 38, 90);
     height: 35px;
-    border: solid 10px;
-    border-color: rgb(68, 38, 90);
+    border-style: hidden;
+    /* border: solid 10px;
+    border-color: rgb(68, 38, 90); */
 }
 
 a {
