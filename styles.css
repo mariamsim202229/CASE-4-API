@@ -3,6 +3,7 @@ body {
     max-height: 896px;
     background-image: url(scaletowidth.jpeg);
     background-size: cover;
+    position: relative;
     /* background-repeat: no-repeat; */
 }
 
@@ -11,7 +12,6 @@ button {
     color: rgb(68, 38, 90);
     font-size: x-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-    /* border: solid 10px; */
     border-style: hidden;
     margin-top: 10px;
     font-style: italic;
@@ -22,8 +22,6 @@ button {
     background-color: violet;
     height: 35px;
     width: 435px;
-    /* border: solid 10px;
-    border-color: rgb(68, 38, 90); */
     border-style: hidden;
     font-size: x-large;
     color: white;
@@ -42,7 +40,6 @@ h1 {
 
 h2 {
     color: whitesmoke;
-    /* margin-left: 10px; */
     font-size: xx-large;
 }
 
@@ -62,8 +59,7 @@ div {
     color: rgb(68, 38, 90);
     height: 35px;
     border-style: hidden;
-    /* border: solid 10px;
-    border-color: rgb(68, 38, 90); */
+   
 }
 
 #yearEnd {
@@ -73,8 +69,7 @@ div {
     color: rgb(68, 38, 90);
     height: 35px;
     border-style: hidden;
-    /* border: solid 10px;
-    border-color: rgb(68, 38, 90); */
+   
 }
 
 a {
@@ -89,19 +84,16 @@ footer {
 .imageClass {
     height: 300px;
     width: 435px;
-
-    /* border: solid 2px violet; */
 }
 
 p {
     width: 414px;
-    /* border: solid 3px white */
     padding: 10px;
     color: white;
     text-align: justify;
 }
 
 #container {
-    background: limegreen;
+    background: #32cd32;
     width: fit-content;
 }

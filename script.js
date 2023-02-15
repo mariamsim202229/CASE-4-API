@@ -31,16 +31,15 @@ button.addEventListener("click", function () {
             let searchItems = data.collection.items;
             searchItems.forEach(item => {
                 if (Array.isArray(item.links) && Array.isArray(item.data)) {
-
                     let image = item.links[0].href;
                     let description = item.data[0].description;
                     document.getElementById("container").innerHTML += `<img src = "${image}" class = "imageClass">  <p>${description}</p> `;
                 }
 
-                if (item.data[0].media_type === 'image') {
+                // if (item.data[0].media_type === 'image') {
 
-                    const media_type = item.data[0].media_type
-                }
+                //     const mediaType = item.data[0].media_type
+                // }
             })
         });
 });
